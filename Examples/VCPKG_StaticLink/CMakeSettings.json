@@ -10,11 +10,20 @@
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
       "inheritEnvironments": [ "msvc_x64_x64" ],
-      "cmakeToolchain": "${env.VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
       "variables": [
         {
           "name": "VCPKG_TARGET_TRIPLET",
           "value": "x64-windows-static",
+          "type": "STRING"
+        },
+        {
+          "name": "VCPKG_HOST_TRIPLET",
+          "value": "x64-windows-static",
+          "type": "STRING"
+        },
+        {
+          "name": "VCPKG_INSTALLED_DIR",
+          "value": "${projectDir}\\out\\build\\x64\\vcpkg_installed",
           "type": "STRING"
         }
       ]
@@ -28,12 +37,21 @@
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
-      "cmakeToolchain": "${env.VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
       "inheritEnvironments": [ "msvc_x64_x64" ],
       "variables": [
         {
           "name": "VCPKG_TARGET_TRIPLET",
           "value": "x64-windows-static",
+          "type": "STRING"
+        },
+        {
+          "name": "VCPKG_HOST_TRIPLET",
+          "value": "x64-windows-static",
+          "type": "STRING"
+        },
+        {
+          "name": "VCPKG_INSTALLED_DIR",
+          "value": "${projectDir}\\out\\build\\x64\\vcpkg_installed",
           "type": "STRING"
         }
       ]
@@ -53,6 +71,16 @@
           "name": "VCPKG_TARGET_TRIPLET",
           "value": "x86-windows-static",
           "type": "STRING"
+        },
+        {
+          "name": "VCPKG_HOST_TRIPLET",
+          "value": "x86-windows-static",
+          "type": "STRING"
+        },
+        {
+          "name": "VCPKG_INSTALLED_DIR",
+          "value": "${projectDir}\\out\\build\\x86\\vcpkg_installed",
+          "type": "STRING"
         }
       ]
     },
@@ -70,6 +98,16 @@
         {
           "name": "VCPKG_TARGET_TRIPLET",
           "value": "x86-windows-static",
+          "type": "STRING"
+        },
+        {
+          "name": "VCPKG_HOST_TRIPLET",
+          "value": "x86-windows-static",
+          "type": "STRING"
+        },
+        {
+          "name": "VCPKG_INSTALLED_DIR",
+          "value": "${projectDir}\\out\\build\\x86\\vcpkg_installed",
           "type": "STRING"
         }
       ]
